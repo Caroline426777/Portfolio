@@ -1,0 +1,280 @@
+$anim-speed: 0.3s;
+
+$primary: #e9cdcd;
+$secondary: #d0a486;
+$success: #e5675a;
+$warning: #F3EDE9;
+$info: #95b0e5;
+$light: #ffffff;
+
+$gradient: radial-gradient(
+  circle,
+  rgba(233, 205, 205, 1) 0%,
+  rgba(230, 185, 189, 1) 100%
+);
+
+.gradientTwo{
+  background-image: linear-gradient(#d3def4, #b7ccf7);
+}
+
+.gradientThree{
+  background-image: linear-gradient(#b7ccf7, #e2bba1);
+}
+
+.gradientFour{
+  background-image: linear-gradient(#e9cfbf, #dcb6f2);
+}
+
+.gradientFive{
+  background-image: linear-gradient(#e9cfbf, #f49f8e);
+}
+
+.gradientSix{
+  background-image: linear-gradient(#e8c1c5, #dcb6f2);
+}
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 7,
+  11: $spacer * 8,
+  8: $spacer * 9,
+  12: $spacer * 10,
+  9: $spacer * 12,
+  10: $spacer * 14
+);
+
+$headings-font-family: "jeanne-moderno", serif !default;
+
+$h1-font-size: 4rem;
+
+hr.style1 {
+  border-top: 2px solid $secondary;
+  opacity: 1;
+}
+
+.nav-line{
+  margin: 0;
+  margin-block-start: -0.7rem;
+  border-top: 5px solid $light;
+  opacity: 1;
+  transform: rotate(357deg);
+  visibility: hidden;
+}
+
+.nav-line-right{
+  margin: 0;
+  margin-block-start: -0.7rem;
+  border-top: 5px solid $light;
+  opacity: 1;
+  transform: rotate(3deg);
+  visibility: hidden;
+}
+
+.nav-item:hover .nav-line{
+  visibility: visible;
+}
+
+.nav-item:hover .nav-line-right{
+  visibility: visible;
+}
+
+
+.tile {
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    width: calc(100% - 30px);
+    height: calc(50% - 15px);
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    z-index: 2;
+    transition-property: top, opacity;
+    transition-duration: $anim-speed;
+  }
+
+  .details {
+    font-size: 16px;
+    padding: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
+    span {
+      display: block;
+      opacity: 0;
+      position: relative;
+      top: 100px;
+      transition-property: top, opacity;
+      transition-duration: $anim-speed;
+      transition-delay: 0s;
+    }
+
+    .title {
+      line-height: 1;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .info {
+      line-height: 1.2;
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    &:before,
+    span {
+      opacity: 1;
+    }
+
+    &:before {
+      top: 50%;
+    }
+
+    span {
+      top: 0;
+    }
+
+    .title {
+      transition-delay: 0.15s;
+    }
+
+    .info {
+      transition-delay: 0.25s;
+    }
+  }
+}
+
+.prev-project{
+  background-image: url(../photos/project-nav-06.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 40%;
+  background-position-y: 10%;
+  height: 12vh;
+}
+
+.next-project{
+  background-image: url(../photos/project-nav-07.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 10%;
+  background-position-y: 0;
+  height: 12vh;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.hover-h1:hover{
+  color: #9db6f4;
+  cursor: pointer;
+}
+
+.arrow {
+  animation-name: mover;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+@keyframes mover{
+  0%{transform: translateY(0);}
+  50%{transform: translateY(-10px);}
+  100%{transform: translateY(0);}
+}
+
+a{
+  text-decoration: none;
+}
+
+//DAF page
+
+.DAF-navbar{
+  background-image: url(../photos/DAF/MockupDAF4-header.png);
+}
+
+//Strijp-T page
+
+.strijp-navbar{
+  background-color: #b7ccf7;
+}
+
+//DDW page
+.ddw-navbar{
+  background-color: #b7ccf7;
+}
+
+//Lickalix page
+
+.lickalix-navbar{
+  background-color: #e9cfbf;
+}
+
+//LadiesGamers page
+
+.ladiesgamers-navbar{
+  background-color: #e8c1c5;
+}
+
+.image{
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.banner-img:hover .overlay {
+  width: 50%;
+  right: 0;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+/* Interactive Ellie page */
+
+.ellie-navbar{
+  background-color: #e9cfbf;
+}
+

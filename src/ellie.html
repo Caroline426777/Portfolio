@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Ellie</title>
+    <link rel="stylesheet" href="assets/scss/main.scss" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <div class="ellie-navbar">
+        <nav class="navbar navbar-expand-lg" id="navbar-example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/photos/MyLogo-white.png" class="img-fluid" alt="" width="60" height="60" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-light active fs-5" aria-current="page" href="index.html">
+                                <h5>Work</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-5" href="./about.html">
+                                <h5>About</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="gradientFive">
+        <div class="container-fluid">
+            <div class="d-flex flex-column align-items-center">
+                <div class="d-flex pt-5 pb-4 gap-6">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col text-center text-md-start col-md-6 ellie-header">
+                            <h1 class="text-light pt-2 pt-md-8">Interactive Ellie</h1>
+                            <p class="text-light fs-4">
+                                Concepting, Design, Developer - 2020
+                            </p>
+                        </div>
+
+                        <div class="col col-md-6 ellie-header-img">
+                            <img src="./assets/photos/Ellie/MockupEllie-sep.png" class="img-fluid" width="400" />
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <img src="./assets/photos/ScrollArrow.svg" class="img-fluid arrow" width="30">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ellie-introduction">
+        <div class="container">
+            <div class="pt-7 pb-7">
+                <div class="d-flex flex-column align-items-center ellie-text">
+                    <img class="pb-5" src="./assets/photos/Ellie/Fontys-logo.png" alt="strijp-logo img-fluid"
+                        width="350" />
+                    <p class="ps-lg-8 pe-lg-8 ps-xl-10 pe-xl-10">
+                        Interactive Ellie is an initiative of Fontys ICT. A couple of years back they decided to break
+                        down one of the school buildings to rebuild a new one. The Delta group thought it fun to make
+                        the to be broken down building come to life. Similar to the car from Christine. The purpose over
+                        the years for this project is to make the building come alive. We did this by designing Ellie's
+                        Secret Agenda.<br /><br />
+                        Client: Fontys ICT
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-ellie">
+        <img src="./assets/photos/Ellie/Mockup-Ellie.png" class="img-fluid" />
+    </div>
+
+    <div class="ellie-project">
+        <div class="container">
+            <div class="pt-7 pb-7">
+                <div class="d-flex flex-column align-items-center ellie-project">
+                    <h2 class="text-info pb-3">Interactive Ellie App</h2>
+                    <p class="ps-lg-8 pe-lg-8 ps-xl-10 pe-xl-10">
+                        With the app we want students to be able to carry Ellie with them
+                        and feel like they are a part of Ellie. As the name suggests it is
+                        an agenda of sorts, but it goes way beyond a standard planner. In
+                        this agenda you can see your daily tasks, meetings, workshops that
+                        apply to you and keeps track of how for you have come in
+                        completing your learning outcomes. Ellie also gives you tips
+                        throughout the day, some tips could be: A new command that you can
+                        try at the Ellie map, where you can buy lunch, what the weather is
+                        like and how to enjoy or avoid it, etc. With this app, Ellie is
+                        trying to give you the best school day possible.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row-2 pt-10 pb-10 d-flex gap-6">
+            <div class="col prev-project text-right">
+                <p>PREV</p>
+                <a href="lickalix.html" class="nav-link"><h2 class="hover-h1">Lickalix</h2></a>
+            </div>
+
+            <div class="col next-project">
+                <p>NEXT</p>
+                <a href="ladiesgamers.html" class="nav-link"><h2 class="hover-h1">LadiesGamers</h2></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./assets/js/main.js"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.ellie-header',{
+          duration: 1500,
+          origin:'left',
+          distance:'300px'
+        });
+        sr.reveal('.ellie-header-img',{
+          duration: 1500,
+          origin:'bottom',
+          distance:'300px'
+        });
+        sr.reveal(".ellie-text", {
+            duration: 1500,
+            origin: "bottom",
+            distance: "300px",
+            viewFactor: 0.2,
+        });
+        sr.reveal(".dashboard-ellie", {
+            duration: 1500,
+            origin: "right",
+            distance: "500px",
+            viewFactor: 0.2,
+        });
+        sr.reveal(".ellie-project", {
+            duration: 1500,
+            origin: "bottom",
+            distance: "300px",
+            viewFactor: 0.2,
+        });
+
+        sr.reveal(".ellie-left", {
+            duration: 1500,
+            origin: "left",
+            distance: "300px",
+            viewFactor: 0.2,
+        });
+    </script>
+</body>
+
+</html>
