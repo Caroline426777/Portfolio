@@ -33,6 +33,10 @@ $gradient: radial-gradient(
   background-image: linear-gradient(#e8c1c5, #dcb6f2);
 }
 
+.gradientSeven{
+  background-image: linear-gradient(#d3def4, #dcb6f2);
+}
+
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -224,7 +228,7 @@ a{
 
 //DDW page
 .ddw-navbar{
-  background-color: #b7ccf7;
+  background-color: #d3def4;
 }
 
 //Lickalix page

@@ -19,6 +19,10 @@
   background-image: linear-gradient(#e8c1c5, #dcb6f2);
 }
 
+.gradientSeven {
+  background-image: linear-gradient(#d3def4, #dcb6f2);
+}
+
 hr.style1 {
   opacity: 1;
   border-top: 2px solid #d0a486;
@@ -171,8 +175,12 @@ a {
   background-image: url("MockupDAF4-header.683adde9.png");
 }
 
-.strijp-navbar, .ddw-navbar {
+.strijp-navbar {
   background-color: #b7ccf7;
+}
+
+.ddw-navbar {
+  background-color: #d3def4;
 }
 
 .lickalix-navbar {
