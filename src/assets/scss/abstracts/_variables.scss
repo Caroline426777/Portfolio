@@ -1,3 +1,7 @@
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 $anim-speed: 0.3s;
 
 $primary: #e9cdcd;
@@ -50,6 +54,7 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 4.5,
+  13: $spacer * 5.5,
   7: $spacer * 7,
   11: $spacer * 8,
   8: $spacer * 9,
@@ -140,13 +145,11 @@ hr.style1 {
     .title {
       line-height: 1;
       font-weight: 600;
-      font-size: 18px;
     }
 
     .info {
       line-height: 1.2;
       margin-top: 5px;
-      font-size: 12px;
     }
   }
 
