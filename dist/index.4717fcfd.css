@@ -1,4 +1,8 @@
 @import "https://use.typekit.net/tag1xgq.css";
+.container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  max-width: 100%;
+}
+
 .gradientTwo {
   background-image: linear-gradient(#d3def4, #b7ccf7);
 }
@@ -25,6 +29,7 @@
 
 hr.style1 {
   opacity: 1;
+  width: 30vw;
   border-top: 2px solid #d0a486;
 }
 
