@@ -4,7 +4,7 @@ html, body{
 }
 $anim-speed: 0.3s;
 
-$primary: #e9cdcd;
+$primary: #e8c1c5;
 $secondary: #d0a486;
 $success: #e5675a;
 $warning: #F3EDE9;
@@ -19,6 +19,14 @@ $gradient: radial-gradient(
 );
 .container-fluid{
   max-width: 100%;
+}
+
+.purple{
+  color: #dcb6f2;
+}
+
+.lBrown{
+  color: #e9cfbf;
 }
 
 .gradientTwo{
@@ -208,7 +216,7 @@ $h1-font-size: 4rem;
 }
 
 .hover-h1:hover{
-  color: #9db6f4;
+  color: $secondary;
   cursor: pointer;
 }
 
