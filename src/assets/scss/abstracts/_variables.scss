@@ -17,7 +17,6 @@ $gradient: radial-gradient(
   rgba(233, 205, 205, 1) 0%,
   rgba(230, 185, 189, 1) 100%
 );
-
 .container-fluid{
   max-width: 100%;
 }
@@ -68,7 +67,7 @@ $headings-font-family: 'Playfair Display', serif !default;
 
 $h1-font-size: 4rem;
 
-hr.style1 {
+.style1 {
   border-top: 2px solid $secondary;
   opacity: 1;
   width: 30vw;
@@ -77,7 +76,6 @@ hr.style1 {
 .nav-line{
   margin: 0;
   margin-block-start: -0.7rem;
-  border-top: 5px solid $secondary;
   opacity: 1;
   transform: rotate(357deg);
   visibility: hidden;
@@ -86,10 +84,17 @@ hr.style1 {
 .nav-line-right{
   margin: 0;
   margin-block-start: -0.7rem;
-  border-top: 5px solid $secondary;
   opacity: 1;
   transform: rotate(3deg);
   visibility: hidden;
+}
+
+.hr-secondary{
+  border-top: 5px solid $secondary;
+}
+
+.hr-light{
+  border-top: 5px solid $light;
 }
 
 .nav-item:hover .nav-line{
