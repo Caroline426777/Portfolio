@@ -2,6 +2,10 @@ html, body{
   max-width: 100%;
   overflow-x: hidden;
 }
+
+$headings-font-family: 'Playfair Display', serif !default;
+$h1-font-size: 4rem;
+
 $anim-speed: 0.3s;
 
 $primary: #e8c1c5;
@@ -71,45 +75,43 @@ $spacers: (
   10: $spacer * 14
 );
 
-$headings-font-family: 'Playfair Display', serif !default;
-
-$h1-font-size: 4rem;
-
 .style1 {
   border-top: 2px solid $secondary;
   opacity: 1;
   width: 30vw;
 }
 
-.nav-line{
+//navigation bar
+.nav ul {
+  background: #E5D8CF;
+  padding: 0.5em 5em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1em auto;
+  display:flex;
+  gap: 5rem;
+  justify-content:center;
+  border-radius: 50px;
+}
+
+.nav li {
+  display: inline-block;
+  padding: .5em;
+  list-style-type: none;
   margin: 0;
-  margin-block-start: -0.7rem;
-  opacity: 1;
-  transform: rotate(357deg);
-  visibility: hidden;
 }
 
-.nav-line-right{
-  margin: 0;
-  margin-block-start: -0.7rem;
-  opacity: 1;
-  transform: rotate(3deg);
-  visibility: hidden;
+.nav a{
+  text-decoration:none;
+  color:white;
 }
 
-.hr-secondary{
-  border-top: 5px solid $secondary;
-}
-
-.hr-light{
-  border-top: 5px solid $light;
-}
-
-.nav-item:hover .nav-line{
+.nav-item:hover{
   visibility: visible;
 }
 
-.nav-item:hover .nav-line-right{
+.nav-item:hover{
   visibility: visible;
 }
 
