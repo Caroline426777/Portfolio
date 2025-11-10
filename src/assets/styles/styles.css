@@ -2,23 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    p {
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 300;
-        font-size: 1.1rem;
-        color: var(--dark-color);
-
-    }
-
-    h1 {
-        font-family: 'Playfair Display', serif;
-        font-weight: 600;
-        font-size: 3.8rem;
-    }
-
-    a {
-        text-decoration: none;
-    }
 
     --primary-bg-color: #F3EDE9;
     --primary-color: #e8c1c5;
@@ -35,7 +18,24 @@ body {
     overflow-x: hidden;
 }
 
-img{
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: var(--dark-color)
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 3.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
     max-width: 100%;
     height: auto;
 }
