@@ -82,7 +82,7 @@ ul {
 }
 
 /*Work styling*/
-#Work{
+#Work {
     padding-top: 4.5rem;
 }
 
@@ -112,8 +112,10 @@ ul {
     grid-template-columns: 1fr;
     padding-top: 3rem;
     padding-bottom: 7rem;
+}
 
-    @media (width >=40em) {
+@media(width >=40em) {
+    .work-projects {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
@@ -127,7 +129,7 @@ ul {
     display: flex;
     justify-content: center;
 
-    &:before {
+    &::before{
         content: "";
         background: linear-gradient(to bottom,
                 rgba(0, 0, 0, 0) 0%,
