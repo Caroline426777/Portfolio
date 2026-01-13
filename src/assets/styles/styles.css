@@ -51,6 +51,10 @@ header {
     background-color: var(--primary-bg-color);
 }
 
+.text-light{
+    color: #fff;
+}
+
 /*navigation styling*/
 ul {
     list-style-type: none;
@@ -178,4 +182,47 @@ span {
 .tile:hover .details {
     opacity: 1;
     transition: opacity 0.3s ease-in;
+}
+
+/*daf styling*/
+.DAF-navbar{
+  background-image: url(../photos/DAF/MockupDAF4-header.png);
+}
+
+.gradientTwo{
+    background-image: linear-gradient(#d3def4, #b7ccf7);
+}
+
+.project-header {
+    width: min(90%, 80rem);
+    margin-inline: auto;
+}
+.project-header-content {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+}
+
+@media(width >=40em){
+    .project-header-content {
+        flex-direction: row;
+    }
+}
+
+.project-header-text {
+    text-align: center;
+}
+
+@media(width >=40em){
+    .project-header-text {
+        text-align: start;
+    }
+}
+
+.arrow {
+    padding-bottom: 1.5rem;
 }
