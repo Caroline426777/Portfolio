@@ -357,3 +357,12 @@ span {
 .gradientTwo {
     background-image: linear-gradient(#d3def4, #b7ccf7);
 }
+
+/*strijp styling*/
+.strijp-navbar{
+  background-color: #b7ccf7;
+}
+
+.gradientThree {
+    background-image: linear-gradient(#b7ccf7, #e2bba1);
+}
