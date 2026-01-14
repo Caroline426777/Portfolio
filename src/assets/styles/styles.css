@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-
     --primary-bg-color: #F3EDE9;
     --primary-color: #e8c1c5;
     --secondary-color: #d0a486;
@@ -33,6 +32,19 @@ h1 {
     color: var(--dark-color);
 }
 
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--dark-color);
+    padding-bottom: 1rem;
+}
+
+h2:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
 }
@@ -51,8 +63,158 @@ header {
     background-color: var(--primary-bg-color);
 }
 
-.text-light{
-    color: #fff;
+.text-light {
+    color: var(--light-color);
+}
+
+.project-header {
+    width: min(90%, 80rem);
+    margin-inline: auto;
+}
+
+.project-header-content {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+}
+
+@media(width >=40em) {
+    .project-header-content {
+        flex-direction: row;
+    }
+}
+
+.project-header-text {
+    text-align: center;
+}
+
+@media(width >=40em) {
+    .project-header-text {
+        text-align: start;
+    }
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.arrow {
+    padding-bottom: 1.5rem;
+    animation-name: mover;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.project-container {
+    padding-block: 5.5rem;
+}
+
+.project-container {
+    padding-block: 5.5rem;
+}
+
+@media(width >=60em) {
+    .project-container {
+        padding-block: 12rem;
+    }
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    width: min(90%, 60rem);
+    text-align: center;
+}
+
+.project-logo {
+    padding-bottom: 3rem;
+}
+
+.two-images {
+    display: flex;
+    flex-direction: column;
+
+    .two-images-width .two-images-width-4 .two-images-width-8 {
+        width: 100%;
+    }
+}
+
+@media(width >=40em) {
+    .two-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .two-images-width {
+            width: 50%;
+        }
+
+        .two-images-width-4 {
+            width: 33.33%;
+        }
+
+        .two-images-width-8 {
+            width: 66.66%;
+        }
+    }
+}
+
+/*botton navigation styling*/
+.bottom-nav-container {
+    padding-block: 10rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+@media(width >=40em) {
+    .bottom-nav-container {
+        gap: 4.5rem;
+    }
+}
+
+.text-right {
+    text-align: end;
+}
+
+.prev-project{
+  background-image: url(../photos/project-nav-06.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: 40%;
+  background-position-y: 10%;
+  height: 12vh;
+}
+
+.next-project{
+  background-image: url(../photos/project-nav-07.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 10%;
+  background-position-y: 0;
+  height: 12vh;
 }
 
 /*navigation styling*/
@@ -68,7 +230,7 @@ ul {
     margin-inline: auto;
 }
 
-li:hover{
+li:hover {
     background-color: #E5D8CF;
     transition-duration: 0.3s;
     padding: 0 3rem 0 3rem;
@@ -144,10 +306,11 @@ span {
     top: 100px;
 }
 
-.tile:hover span{
+.tile:hover span {
     animation: slideUp 0.5s forwards;
     animation-delay: 0.1s;
 }
+
 @keyframes slideUp {
     to {
         opacity: 1;
@@ -168,7 +331,7 @@ span {
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
     padding: 40px;
-    color: #fff;
+    color: var(--light-color);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -185,44 +348,10 @@ span {
 }
 
 /*daf styling*/
-.DAF-navbar{
-  background-image: url(../photos/DAF/MockupDAF4-header.png);
+.DAF-navbar {
+    background-image: url(../photos/DAF/MockupDAF4-header.png);
 }
 
-.gradientTwo{
+.gradientTwo {
     background-image: linear-gradient(#d3def4, #b7ccf7);
-}
-
-.project-header {
-    width: min(90%, 80rem);
-    margin-inline: auto;
-}
-.project-header-content {
-    padding-top: 8rem;
-    padding-bottom: 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4.5rem;
-}
-
-@media(width >=40em){
-    .project-header-content {
-        flex-direction: row;
-    }
-}
-
-.project-header-text {
-    text-align: center;
-}
-
-@media(width >=40em){
-    .project-header-text {
-        text-align: start;
-    }
-}
-
-.arrow {
-    padding-bottom: 1.5rem;
 }
