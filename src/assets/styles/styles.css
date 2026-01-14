@@ -155,28 +155,30 @@ header {
 .two-images {
     display: flex;
     flex-direction: column;
+}
 
-    .two-images-width .two-images-width-4 .two-images-width-8 {
-        width: 100%;
-    }
+.two-images-width,
+.two-images-width-4,
+.two-images-width-8 {
+    width: 100%;
 }
 
 @media(width >=40em) {
     .two-images {
         flex-direction: row;
         flex-wrap: wrap;
+    }
 
-        .two-images-width {
-            width: 50%;
-        }
+    .two-images-width {
+        width: 50%;
+    }
 
-        .two-images-width-4 {
-            width: 33.33%;
-        }
+    .two-images-width-4 {
+        width: 33.33%;
+    }
 
-        .two-images-width-8 {
-            width: 66.66%;
-        }
+    .two-images-width-8 {
+        width: 66.66%;
     }
 }
 
@@ -198,23 +200,23 @@ header {
     text-align: end;
 }
 
-.prev-project{
-  background-image: url(../photos/project-nav-06.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-x: 40%;
-  background-position-y: 10%;
-  height: 12vh;
+.prev-project {
+    background-image: url(../photos/project-nav-06.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    background-position-y: 10%;
+    height: 12vh;
 }
 
-.next-project{
-  background-image: url(../photos/project-nav-07.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position-x: 10%;
-  background-position-y: 0;
-  height: 12vh;
+.next-project {
+    background-image: url(../photos/project-nav-07.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10%;
+    background-position-y: 0;
+    height: 12vh;
 }
 
 /*navigation styling*/
