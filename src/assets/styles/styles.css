@@ -40,7 +40,7 @@ h2 {
     padding-bottom: 1rem;
 }
 
-h2:hover {
+.hover-h2:hover {
     color: var(--secondary-color);
     cursor: pointer;
 }
@@ -359,10 +359,44 @@ span {
 }
 
 /*strijp styling*/
-.strijp-navbar{
-  background-color: #b7ccf7;
+.strijp-navbar {
+    background-color: #b7ccf7;
 }
 
 .gradientThree {
     background-image: linear-gradient(#b7ccf7, #e2bba1);
+}
+
+/*DDW styling*/
+.gradientSeven {
+    background-image: linear-gradient(#d3def4, #dcb6f2);
+}
+
+.ddw-navbar {
+    background-color: #d3def4;
+}
+
+.container-image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(width >=60em) {
+    .container-image-text {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.collaberation-text {
+    padding-inline: 2rem;
+    text-align: center;
+}
+
+@media(width >=40em) {
+    .collaberation-text {
+        padding-inline: 3rem;
+        text-align: start;
+    }
 }
