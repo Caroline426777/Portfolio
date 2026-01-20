@@ -319,10 +319,13 @@ span {
 .title {
     line-height: 1;
     font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
 }
 
 .info {
     line-height: 1.2;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .details {
@@ -406,27 +409,29 @@ span {
     background-image: linear-gradient(#e9cfbf, #dcb6f2);
 }
 
+.project-container-lickalix {
+    padding-top: 5.5rem;
+}
+
 .lickalix-text-image {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    margin-inline: auto;
+    width: min(90%, 80rem);
 }
 
-@media(width >=40em) {
+@media(width >=60em) {
     .lickalix-text-image {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 0;
+        gap: 3rem;
     }
-}
-
-.lickalix-project-text {
-    margin-inline: auto;
-    width: min(90%, 50rem);
 }
 
 .lickalix-event-img{
     justify-content: center;
+    width: 100rem;
 }
