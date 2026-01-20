@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,24 +13,12 @@
   <body>
     <section class="top-section"></section>
     <header class="header-section">
+
       <nav>
-        <ul class="navbar">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.html">
-              <p>Home</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#Work">
-              <p>Work</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/src/pages/about.html">
-              <p>About</p>
-            </a>
-          </li>
-        </ul>
+        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+        <a class="nav-link" aria-current="page" href="#Work">Portfolio</a>
+        <a class="nav-link" href="./src/pages/about.html">About</a>
+        <div class="animation start-home"></div>
       </nav>
 
       <div class="header-container">
@@ -80,6 +68,21 @@
             </div>
           </div>
           <div class="work-projects">
+            <a class="work-images tile" href="./src/pages/pdp.html">
+              <img
+                src="./src/assets/photos/MockupPDP.png"
+                class="img-fluid mock-up"
+                alt="MockupPDP"
+              />
+              <div class="details">
+                <span class="title">Webshop design</span><br />
+                <span class="Info"
+                  >Optimalisatie en herontwerp informatiebalk op de product
+                  pagina van de Clipper Interall webshop.
+                </span>
+              </div>
+            </a>
+
             <a class="work-images tile" href="./src/pages/daf.html">
               <img
                 src="./src/assets/photos/MockupDAF2.png"
@@ -91,7 +94,8 @@
                 <span class="Info"
                   >Een webapp die de gebruiker ondersteund bij het leren van het
                   nieuwe vrachtwagen dashboard en de stuurwiel
-                  schakelaars.</span>
+                  schakelaars.</span
+                >
               </div>
             </a>
 
