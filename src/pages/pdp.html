@@ -10,23 +10,23 @@
   </head>
 
   <body>
-    <div class="DAF-navbar">
+    <div class="PDP-navbar">
       <nav>
         <a class="nav-link" href="/index.html">Home</a>
         <a class="nav-link" aria-current="page" href="/index.html">Portfolio</a>
         <a class="nav-link" href="./about.html">About</a>
-        <div class="animation start-home"></div>
+        <div class="animation start-portfolio"></div>
       </nav>
     </div>
 
     <div class="gradientTwo">
       <div class="project-header">
         <div class="project-header-content">
-          <div class="project-header-text">
+          <div class="project-header-text pdp-header">
             <h1 class="text-light">PDP informatiebalk</h1>
             <p class="text-light">Onderzoek, wireframing en design - 2024</p>
           </div>
-          <div class="daf-header-img">
+          <div class="pdp-header-img">
             <img
               src="../assets/photos/PDP/MockupPDP-sep.png"
               class="img-fluid"
@@ -34,7 +34,7 @@
             />
           </div>
         </div>
-        <a class="arrow-container" href="#DAF">
+        <a class="arrow-container" href="#PDP">
           <img
             src="../assets/photos/ScrollArrow.svg"
             class="arrow"
@@ -45,19 +45,19 @@
     </div>
 
     <div
-      class="daf-introduction scrollspy-DAF"
-      data-bs-spy="scrollDAF"
-      data-bs-target="#navbar-DAF"
+      class="pdp-introduction scrollspy-PDP"
+      data-bs-spy="scrollPDP"
+      data-bs-target="#navbar-PDP"
       data-bs-offset="0"
       tabindex="0"
-      id="DAF"
+      id="PDP"
     >
       <div class="project-container">
         <div class="project-text">
           <img
             class="project-logo"
             src="/src/assets/photos/Clipper-Interall_logo.png"
-            alt="daf-logo"
+            alt="pdp-logo"
             width="400"
           />
           <p>
@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <div class="pdp-ideas">
+    <div class="pdp-image">
       <img src="../assets/photos/PDP/PDP_Ideeen.png" class="img-fluid" />
     </div>
 
@@ -105,18 +105,14 @@
       </div>
     </div>
 
-    <div class="pdp-wireframes">
-      <img
-        src="../assets/photos/PDP/Wireframe iteraties.png"
-        class="img-fluid"
-      />
-      <img
+    <div class="pdp-image">
+            <img
         src="../assets/photos/PDP/Definitieve wireframes.png"
         class="img-fluid"
       />
-    </div>
+      </div>
 
-    <div class="daf-concept">
+    <div class="pdp-concept">
       <div class="project-container">
         <div class="project-text">
           <h2>Design</h2>
@@ -137,6 +133,17 @@
           </p>
         </div>
       </div>
+    </div>
+
+    <div class="two-images">
+      <img
+        src="../assets/photos/PDP/Mockup_Filter.png"
+        class="two-images-width img-left"
+      />
+      <img
+        src="../assets/photos/PDP/Mockup_voorraad.png"
+        class="two-images-width img-right"
+      />
     </div>
 
     <iframe
@@ -165,29 +172,29 @@
 
     <script>
       window.sr = ScrollReveal();
-      sr.reveal(".daf-header", {
+      sr.reveal(".pdp-header", {
         duration: 1500,
         origin: "left",
         distance: "300px",
       });
-      sr.reveal(".daf-header-img", {
+      sr.reveal(".pdp-header-img", {
         duration: 1500,
         origin: "bottom",
         distance: "300px",
       });
-      sr.reveal(".daf-text", {
+      sr.reveal(".pdp-text", {
         duration: 1500,
         origin: "bottom",
         distance: "300px",
         viewFactor: 0.2,
       });
-      sr.reveal(".dashboard-daf", {
+      sr.reveal(".pdp-image", {
         duration: 1500,
         origin: "right",
         distance: "300px",
         viewFactor: 0.2,
       });
-      sr.reveal(".daf-project", {
+      sr.reveal(".pdp-project", {
         duration: 1500,
         origin: "bottom",
         distance: "300px",
