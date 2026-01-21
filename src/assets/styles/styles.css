@@ -23,6 +23,7 @@ p {
     font-weight: 300;
     font-size: 1.1rem;
     color: var(--dark-color);
+    line-height: 1.5rem
 }
 
 h1 {
