@@ -578,3 +578,51 @@ span {
     justify-content: center;
     width: 100rem;
 }
+
+/*About styling*/
+.about-container{
+    padding-top: 8rem;
+    padding-bottom: 9rem;
+    margin-inline: auto;
+    width: min(90%, 70rem);
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(width >=50em) {
+    .about-container{
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+.about-text{
+    width: 80%;
+}
+
+.contact-container{
+    padding-top: 4rem;
+    padding-bottom: 9rem;
+    margin-inline: auto;
+    width: min(90%, 80rem);
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(width >=40em) {
+    .contact-container{
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+h5{
+    font-family: work sans, sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
