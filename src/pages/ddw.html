@@ -10,27 +10,35 @@
   </head>
 
   <body>
-    <div class="ddw-navbar">
-      <nav>
-        <a class="nav-link" href="/index.html">Home</a>
-        <a class="nav-link" aria-current="page" href="/index.html">Portfolio</a>
-        <a class="nav-link" href="./about.html">About</a>
-        <div class="animation start-portfolio"></div>
-      </nav>
-    </div>
+    <header class="beige-background">
+      <section class="top-section"></section>
 
-    <div class="gradientSeven">
+      <div class="ddw-navbar">
+        <nav class="nav-beige">
+          <a class="nav-link link-beige" href="/index.html">Home</a>
+          <a class="nav-link link-beige" aria-current="page" href="/index.html"
+            >Portfolio</a
+          >
+          <a class="nav-link link-beige" href="./about.html">About</a>
+          <div class="animation start-portfolio"></div>
+        </nav>
+      </div>
+
       <div class="project-header">
         <div class="project-header-content">
           <div class="project-header-text">
-            <h1 class="text-light">Dutch Design Week</h1>
-            <p class="text-light">Concepting, Design, Development - 2022</p>
+            <h1 class="text-dark">Dutch Design Week</h1>
+            <p class="text-dark sub-text">Concepting, Design, Development - 2022</p>
           </div>
           <div class="ddw-header-img">
             <img
               src="../assets/photos/DDW/MockupDDW-sep.png"
               class="img-fluid"
               width="800"
+              style="
+                filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2))
+                  drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+              "
             />
           </div>
         </div>
@@ -42,7 +50,7 @@
           />
         </a>
       </div>
-    </div>
+    </header>
 
     <div
       class="ddw-introduction scrollspy-DDW"
@@ -82,9 +90,9 @@
       <div class="container-image-text">
         <img
           src="../assets/photos/DDW/ddw-header-01_1664359739_1800x1010.jpg"
-          class="two-images-width"
+          class="two-images-width img-left"
         />
-        <div class="collaberation-text">
+        <div class="collaberation-text img-right">
           <h2>Samenwerking</h2>
           <p>
             Tijdens deze Dutch Design Week werkten we niet alleen. De bedrijven
@@ -130,11 +138,11 @@
     <div class="two-images">
       <img
         src="../assets/photos/DDW/Concepts-27.png"
-        class="two-images-width"
+        class="two-images-width img-left"
       />
       <img
         src="../assets/photos/DDW/Concepts-28.png"
-        class="two-images-width"
+        class="two-images-width img-right"
       />
     </div>
 
@@ -161,11 +169,11 @@
     <div class="two-images">
       <img
         src="../assets/photos/DDW/Sketch Final-29.png"
-        class="two-images-width"
+        class="two-images-width img-left"
       />
-      <img src="../assets/photos/DDW/SetUp.png" class="two-images-width" />
-      <img src="../assets/photos/DDW/BlobOne.png" class="two-images-width" />
-      <img src="../assets/photos/DDW/Testing.png" class="two-images-width" />
+      <img src="../assets/photos/DDW/SetUp.png" class="two-images-width img-right" />
+      <img src="../assets/photos/DDW/BlobOne.png" class="two-images-width img-left" />
+      <img src="../assets/photos/DDW/Testing.png" class="two-images-width img-right" />
     </div>
 
     <div class="bottom-nav-container">
@@ -186,17 +194,17 @@
 
     <script>
       window.sr = ScrollReveal();
-      sr.reveal(".ddw-header", {
+      sr.reveal(".project-header", {
         duration: 1500,
         origin: "left",
         distance: "300px",
       });
-      sr.reveal(".ddw-header-img", {
+      sr.reveal(".project-header-img", {
         duration: 1500,
         origin: "bottom",
         distance: "300px",
       });
-      sr.reveal(".ddw-text", {
+      sr.reveal(".project-text", {
         duration: 1500,
         origin: "bottom",
         distance: "300px",

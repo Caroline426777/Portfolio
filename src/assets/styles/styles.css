@@ -3,12 +3,11 @@
 
 :root {
     --primary-bg-color: #f7ece6;
-    --primary-color: #e8c1c5;
+    --primary-color: #e3acb4;
     --secondary-color: #d0a486;
-    --success-bg-color: #e5675a;
-    --info-bg-color: #95b0e5;
     --light-color: #ffffff;
-    --dark-color: #353535;
+    --dark-color:#54433a;
+    --text-color: #353535;
 }
 
 html,
@@ -22,7 +21,7 @@ p {
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     font-size: 1.1rem;
-    color: var(--dark-color);
+    color: var(--text-color);
     line-height: 1.5rem
 }
 
@@ -62,11 +61,27 @@ header {
 
 .top-section {
     height: 2.5rem;
-    background-color: var(--primary-bg-color);
 }
 
 .text-light {
     color: var(--light-color);
+}
+
+.text-pink {
+    color: var(--primary-color);
+}
+
+.text-beige {
+    color: var(--primary-bg-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.sub-text{
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .project-header {
@@ -75,8 +90,8 @@ header {
 }
 
 .project-header-content {
-    padding-top: 8rem;
-    padding-bottom: 10rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,52 +216,22 @@ header {
     }
 }
 
-/*botton navigation styling*/
-.bottom-nav-container {
-    padding-block: 10rem;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-}
-
-@media(width >=40em) {
-    .bottom-nav-container {
-        gap: 4.5rem;
-    }
-}
-
-.text-right {
-    text-align: end;
-}
-
-.prev-project {
-    background-image: url(../photos/project-nav-06.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-x: 40%;
-    background-position-y: 10%;
-    height: 12vh;
-}
-
-.next-project {
-    background-image: url(../photos/project-nav-07.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-x: 10%;
-    background-position-y: 0;
-    height: 12vh;
-}
-
 /*navigation styling*/
 nav {
     margin: 0 auto 0;
     position: relative;
     width: 25rem;
     height: 3.2rem;
-    background-color: #eeddd2;
     border-radius: 5rem;
     font-size: 0;
+}
+
+.nav-beige {
+    background-color: #ecdcd5;
+}
+
+.nav-pink {
+    background-color: #dec2b2;
 }
 
 nav .nav-link {
@@ -259,8 +244,12 @@ nav .nav-link {
     z-index: 1;
     text-decoration: none;
     text-align: center;
-    color: var(--light-color);
+    color: var(--dark-color);
     cursor: pointer;
+}
+
+nav .nav-light {
+    color: var(--light-color);
 }
 
 nav .animation {
@@ -288,21 +277,48 @@ nav .start-home,
 .nav-link:nth-child(1):hover~.animation {
     width: 120px;
     left: 0;
-    background-color: var(--secondary-color);
 }
 
 nav .start-portfolio,
 .nav-link:nth-child(2):hover~.animation {
     width: 160px;
     left: 120px;
-    background-color: var(--secondary-color);
 }
 
 nav .start-about,
 .nav-link:nth-child(3):hover~.animation {
     width: 120px;
     left: 280px;
-    background-color: var(--secondary-color);
+}
+
+nav .start-home,
+.link-beige:nth-child(1):hover~.animation {
+    background-color: #e1c6bb;
+}
+
+nav .start-portfolio,
+.link-beige:nth-child(2):hover~.animation {
+    background-color: #e1c6bb;
+}
+
+nav .start-about,
+.link-beige:nth-child(3):hover~.animation {
+   background-color: #e1c6bb;
+}
+
+nav .start-home,
+.link-pink:nth-child(1):hover~.animation {
+    background-color: #d8b8a5;
+}
+
+nav .start-portfolio,
+.link-pink:nth-child(2):hover~.animation {
+    background-color: #d8b8a5;
+}
+
+nav .start-about,
+.link-pink:nth-child(3):hover~.animation {
+   background-color: #d8b8a5;
 }
 
 /*header styling*/
@@ -418,33 +434,61 @@ span {
     transition: opacity 0.3s ease-in;
 }
 
-/*daf styling*/
-.DAF-navbar {
-    background-image: url(../photos/DAF/MockupDAF4-header.png);
+/*project backgrounds*/
+.brown-background{
+    background-image: linear-gradient(#6d594e, var(--dark-color));
 }
 
-.gradientTwo {
+.beige-background {
+    background-image: linear-gradient(#f7ece6, #ead3c4);
+}
+
+.pink-background {
+    background-image: linear-gradient(#ead3c4, var(--primary-color));
+}
+
+.blue-background {
     background-image: linear-gradient(#d3def4, #b7ccf7);
 }
 
-/*strijp styling*/
-.strijp-navbar {
-    background-color: #b7ccf7;
+/*botton navigation styling*/
+.bottom-nav-container {
+    padding-block: 10rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
-.gradientThree {
-    background-image: linear-gradient(#b7ccf7, #e2bba1);
+@media(width >=40em) {
+    .bottom-nav-container {
+        gap: 4.5rem;
+    }
+}
+
+.text-right {
+    text-align: end;
+}
+
+.prev-project {
+    background-image: url(../photos/project-nav-06.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    background-position-y: 10%;
+    height: 12vh;
+}
+
+.next-project {
+    background-image: url(../photos/project-nav-07.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10%;
+    background-position-y: 0;
+    height: 12vh;
 }
 
 /*DDW styling*/
-.gradientSeven {
-    background-image: linear-gradient(#d3def4, #dcb6f2);
-}
-
-.ddw-navbar {
-    background-color: #d3def4;
-}
-
 .container-image-text {
     display: flex;
     flex-direction: column;
@@ -471,14 +515,6 @@ span {
 }
 
 /*lickalix styling*/
-.lickalix-navbar {
-    background-color: #e9cfbf;
-}
-
-.gradientFour {
-    background-image: linear-gradient(#e9cfbf, #dcb6f2);
-}
-
 .project-container-lickalix {
     padding-top: 5.5rem;
 }

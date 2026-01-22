@@ -10,27 +10,34 @@
   </head>
 
   <body>
-    <div class="lickalix-navbar">
-      <nav>
-        <a class="nav-link" href="/index.html">Home</a>
-        <a class="nav-link" aria-current="page" href="/index.html">Portfolio</a>
-        <a class="nav-link" href="./about.html">About</a>
-        <div class="animation start-portfolio"></div>
-      </nav>
-    </div>
+    <header class="pink-background">
+      <section class="top-section"></section>
+      <div class="lickalix-navbar">
+        <nav class="nav-pink">
+          <a class="nav-link link-pink" href="/index.html">Home</a>
+          <a class="nav-link link-pink" aria-current="page" href="/index.html"
+            >Portfolio</a
+          >
+          <a class="nav-link link-pink" href="./about.html">About</a>
+          <div class="animation start-portfolio"></div>
+        </nav>
+      </div>
 
-    <div class="gradientFour">
       <div class="project-header">
         <div class="project-header-content">
           <div class="project-header-text">
             <h1 class="text-light">Lickalix</h1>
-            <p class="text-light">Product Design, Design - 2019</p>
+            <p class="text-light sub-text">Product Design, Design - 2019</p>
           </div>
           <div class="lickalix-header-img">
             <img
               src="../assets/photos/Lickalix/MockupLickalix-sep.png"
               class="img-fluid"
-              width="1000"
+              width="900"
+              style="
+                filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2))
+                  drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+              "
             />
           </div>
         </div>
@@ -42,8 +49,7 @@
           />
         </a>
       </div>
-    </div>
-
+    </header>
     <div
       class="lickalix-introduction scrollspy-lickalix"
       data-bs-spy="scrollLickalix"
@@ -119,19 +125,19 @@
     <div class="two-images">
       <img
         src="../assets/photos/Lickalix/IceCream1.png"
-        class="two-images-width-4"
+        class="two-images-width-4 img-left"
       />
       <img
         src="../assets/photos/Lickalix/Video-thumbnails-03.png"
-        class="two-images-width-8"
+        class="two-images-width-8 img-right"
       />
       <img
         src="../assets/photos/Lickalix/Video-thumbnails-02.png"
-        class="two-images-width-8"
+        class="two-images-width-8 img-left"
       />
       <img
         src="../assets/photos/Lickalix/IceCream2.png"
-        class="two-images-width-4"
+        class="two-images-width-4 img-right"
       />
     </div>
 
