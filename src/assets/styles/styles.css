@@ -234,6 +234,14 @@ nav {
     background-color: #dec2b2;
 }
 
+.nav-brown {
+    background-color: #604d43;
+}
+
+.nav-blue {
+    background-color: #c8d4ec;
+}
+
 nav .nav-link {
     line-height: 50px;
     height: 100%;
@@ -291,34 +299,63 @@ nav .start-about,
     left: 280px;
 }
 
-nav .start-home,
+nav
 .link-beige:nth-child(1):hover~.animation {
     background-color: #e1c6bb;
 }
 
-nav .start-portfolio,
+nav
 .link-beige:nth-child(2):hover~.animation {
     background-color: #e1c6bb;
 }
 
-nav .start-about,
+nav
 .link-beige:nth-child(3):hover~.animation {
    background-color: #e1c6bb;
 }
 
-nav .start-home,
+nav 
 .link-pink:nth-child(1):hover~.animation {
     background-color: #d8b8a5;
 }
 
-nav .start-portfolio,
+nav
 .link-pink:nth-child(2):hover~.animation {
     background-color: #d8b8a5;
 }
 
-nav .start-about,
+nav
 .link-pink:nth-child(3):hover~.animation {
    background-color: #d8b8a5;
+}
+nav
+.link-brown:nth-child(1):hover~.animation {
+    background-color: #513f36;
+}
+
+nav
+.link-brown:nth-child(2):hover~.animation {
+    background-color: #513f36;
+}
+
+nav
+.link-brown:nth-child(3):hover~.animation {
+   background-color: #513f36;
+}
+
+nav
+.link-blue:nth-child(1):hover~.animation {
+    background-color: #b7c5e0;
+}
+
+nav 
+.link-blue:nth-child(2):hover~.animation {
+    background-color: #b7c5e0;
+}
+
+nav
+.link-blue:nth-child(3):hover~.animation {
+   background-color: #b7c5e0;
 }
 
 /*header styling*/
