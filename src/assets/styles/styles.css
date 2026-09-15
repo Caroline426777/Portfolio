@@ -6,7 +6,7 @@
     --primary-color: #e3acb4;
     --secondary-color: #d0a486;
     --light-color: #ffffff;
-    --dark-color:#54433a;
+    --dark-color: #54433a;
     --text-color: #353535;
 }
 
@@ -38,7 +38,7 @@ h2 {
     font-weight: 600;
     font-size: 2rem;
     color: var(--dark-color);
-    padding-bottom: 1rem;
+    margin-block-end: 0;
 }
 
 .hover-h2:hover {
@@ -79,7 +79,7 @@ header {
     color: var(--dark-color);
 }
 
-.sub-text{
+.sub-text {
     font-weight: 500;
     font-size: 1.2rem;
 }
@@ -159,6 +159,13 @@ header {
     margin-inline: auto;
     width: min(90%, 60rem);
     text-align: center;
+}
+
+.project-text-new {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: min(90%, 60rem);
 }
 
 .project-logo {
@@ -299,63 +306,52 @@ nav .start-about,
     left: 280px;
 }
 
-nav
-.link-beige:nth-child(1):hover~.animation {
+nav .link-beige:nth-child(1):hover~.animation {
     background-color: #e1c6bb;
 }
 
-nav
-.link-beige:nth-child(2):hover~.animation {
+nav .link-beige:nth-child(2):hover~.animation {
     background-color: #e1c6bb;
 }
 
-nav
-.link-beige:nth-child(3):hover~.animation {
-   background-color: #e1c6bb;
+nav .link-beige:nth-child(3):hover~.animation {
+    background-color: #e1c6bb;
 }
 
-nav 
-.link-pink:nth-child(1):hover~.animation {
+nav .link-pink:nth-child(1):hover~.animation {
     background-color: #d8b8a5;
 }
 
-nav
-.link-pink:nth-child(2):hover~.animation {
+nav .link-pink:nth-child(2):hover~.animation {
     background-color: #d8b8a5;
 }
 
-nav
-.link-pink:nth-child(3):hover~.animation {
-   background-color: #d8b8a5;
+nav .link-pink:nth-child(3):hover~.animation {
+    background-color: #d8b8a5;
 }
-nav
-.link-brown:nth-child(1):hover~.animation {
+
+nav .link-brown:nth-child(1):hover~.animation {
     background-color: #513f36;
 }
 
-nav
-.link-brown:nth-child(2):hover~.animation {
+nav .link-brown:nth-child(2):hover~.animation {
     background-color: #513f36;
 }
 
-nav
-.link-brown:nth-child(3):hover~.animation {
-   background-color: #513f36;
+nav .link-brown:nth-child(3):hover~.animation {
+    background-color: #513f36;
 }
 
-nav
-.link-blue:nth-child(1):hover~.animation {
+nav .link-blue:nth-child(1):hover~.animation {
     background-color: #b7c5e0;
 }
 
-nav 
-.link-blue:nth-child(2):hover~.animation {
+nav .link-blue:nth-child(2):hover~.animation {
     background-color: #b7c5e0;
 }
 
-nav
-.link-blue:nth-child(3):hover~.animation {
-   background-color: #b7c5e0;
+nav .link-blue:nth-child(3):hover~.animation {
+    background-color: #b7c5e0;
 }
 
 /*header styling*/
@@ -472,7 +468,7 @@ span {
 }
 
 /*project backgrounds*/
-.brown-background{
+.brown-background {
     background-image: linear-gradient(#6d594e, var(--dark-color));
 }
 
@@ -579,8 +575,15 @@ span {
     width: 100rem;
 }
 
+/*Momoyoga styling*/
+.video-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*About styling*/
-.about-container{
+.about-container {
     padding-top: 8rem;
     padding-bottom: 9rem;
     margin-inline: auto;
@@ -592,17 +595,17 @@ span {
 }
 
 @media(width >=50em) {
-    .about-container{
+    .about-container {
         flex-direction: row;
         gap: 3rem;
     }
 }
 
-.about-text{
+.about-text {
     width: 80%;
 }
 
-.contact-container{
+.contact-container {
     padding-top: 4rem;
     padding-bottom: 9rem;
     margin-inline: auto;
@@ -614,13 +617,13 @@ span {
 }
 
 @media(width >=40em) {
-    .contact-container{
+    .contact-container {
         flex-direction: row;
         gap: 3rem;
     }
 }
 
-h5{
+h5 {
     font-family: work sans, sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
