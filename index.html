@@ -1,181 +1,141 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
 
-    <!--<link rel="stylesheet" href="assets/scss/main.scss">-->
-    <link rel="stylesheet" href="./src/assets/styles/styles.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
-  <body>
-    <header class="header-section">
-      <section class="top-section"></section>
-      <nav class="nav-beige">
-        <a class="nav-link link-beige" aria-current="page" href="./index.html">Home</a>
-        <a class="nav-link link-beige" aria-current="page" href="#Work">Portfolio</a>
-        <a class="nav-link link-beige" href="./src/pages/about.html">Over mij</a>
-        <div class="animation start-home"></div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
 
-      <div class="header-container">
-        <div class="header-row">
-          <div class="headerImg">
-            <img
-              src="./src/assets/photos/Portfolio foto.png"
-              class="img-fluid"
-              alt="drawn-image"
-              width="90%"
-            />
-          </div>
-          <div class="headerText">
-            <h1 class="text-dark">Digital design / front-end developer</h1>
-            <p class="text-dark">
-              Hallo! Mijn naam is Caroline van de Ven en ik ben Digital Designer
-              / Front-end developer. Op deze website vind je een meerdere
-              projecten van de afgelopen jaren. Veel plezier bij het bekijken
-              van mijn projecten.
-            </p>
-          </div>
+  <!--<link rel="stylesheet" href="assets/scss/main.scss">-->
+  <link rel="stylesheet" href="./src/assets/styles/styles.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+  <header class="header-section">
+    <section class="top-section"></section>
+    <nav class="nav-beige">
+      <a class="nav-link link-beige" aria-current="page" href="./index.html">Home</a>
+      <a class="nav-link link-beige" aria-current="page" href="#Work">Portfolio</a>
+      <a class="nav-link link-beige" href="./src/pages/about.html">Over mij</a>
+      <div class="animation start-home"></div>
+    </nav>
+
+    <div class="header-container">
+      <div class="header-row">
+        <div class="headerImg">
+          <img src="./src/assets/photos/Portfolio foto.png" class="img-fluid" alt="drawn-image" width="80%" />
+        </div>
+        <div class="headerText">
+          <h1 class="text-dark">Digital design / front-end developer</h1>
+          <p class="text-dark">
+            Hallo! Mijn naam is Caroline van de Ven en ik ben Digital Designer
+            / Front-end developer. Op deze website vind je een meerdere
+            projecten van de afgelopen jaren. Veel plezier bij het bekijken
+            van mijn projecten.
+          </p>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div
-      class="work"
-      data-bs-spy="scroll"
-      data-bs-target="#navbar-example"
-      data-bs-root-margin="0px 0px -40%"
-      data-bs-smooth-scroll="true"
-      class="scrollspy-example bg-light p-3 rounded-2"
-      tabindex="0"
-    >
-      <div class="container">
-        <div id="Work" class="pt-6">
-          <div class="work-title">
-            <div class="line-left">
-              <hr class="style1" width="520" />
-            </div>
-            <div class="work-header">
-              <h1 class="text-secondary">Projecten</h1>
-            </div>
-            <div class="line-right">
-              <hr class="style1" width="520" />
-            </div>
+  <div class="work" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+    <div class="container">
+      <div id="Work" class="pt-6">
+        <div class="work-title">
+          <div class="line-left">
+            <hr class="style1" width="520" />
           </div>
-          <div class="work-projects">
-            <a class="work-images tile" href="./src/pages/cyp.html">
-              <img
-                src="./src/assets/photos/MockupCYP.png"
-                class="img-fluid mock-up"
-                alt="MockupCyP"
-              />
-              <div class="details">
-                <span class="title">Product configurator</span><br />
-                <span class="Info"
-                  >Een configurator op de website van Clipper Interall, waarmee
-                  de klant zijn eigen product kan samenstellen.
-                </span>
-              </div>
-            </a>
+          <div class="work-header">
+            <h1 class="text-secondary">Projecten</h1>
+          </div>
+          <div class="line-right">
+            <hr class="style1" width="520" />
+          </div>
+        </div>
+        <div class="work-projects">
+          <a class="work-images tile" href="./src/pages/cyp.html">
+            <img src="./src/assets/photos/MockupCYP.png" class="img-fluid mock-up" alt="MockupCyP" />
+            <div class="details">
+              <span class="title">Product configurator</span><br />
+              <span class="Info">Een configurator op de website van Clipper Interall, waarmee
+                de klant zijn eigen product kan samenstellen.
+              </span>
+            </div>
+          </a>
 
-            <a class="work-images tile" href="./src/pages/psi.html">
-              <img
-                src="./src/assets/photos/MockupPSI.png"
-                class="img-fluid mock-up"
-                alt="MockupPSI"
-              />
-              <div class="details">
-                <span class="title">Informatie portaal</span><br />
-                <span class="Info"
-                  >Informatie portaal over het merk Clipper Interall. Dit
-                  portaal trekt nieuwe bezoekers en ondersteunen sales
-                  medewerkers.
-                </span>
-              </div>
-            </a>
+          <a class="work-images tile" href="./src/pages/psi.html">
+            <img src="./src/assets/photos/MockupPSI.png" class="img-fluid mock-up" alt="MockupPSI" />
+            <div class="details">
+              <span class="title">Informatie portaal</span><br />
+              <span class="Info">Informatie portaal over het merk Clipper Interall. Dit
+                portaal trekt nieuwe bezoekers en ondersteunen sales
+                medewerkers.
+              </span>
+            </div>
+          </a>
 
-            <a class="work-images tile" href="./src/pages/pdp.html">
-              <img
-                src="./src/assets/photos/MockupPDP.png"
-                class="img-fluid mock-up"
-                alt="MockupPDP"
-              />
-              <div class="details">
-                <span class="title">Informatiebalk webshop</span><br />
-                <span class="Info"
-                  >Optimalisatie en herontwerp informatiebalk op de product
-                  pagina van de Clipper Interall webshop.
-                </span>
-              </div>
-            </a>
+          <a class="work-images tile" href="./src/pages/pdp.html">
+            <img src="./src/assets/photos/MockupPDP.png" class="img-fluid mock-up" alt="MockupPDP" />
+            <div class="details">
+              <span class="title">Informatiebalk webshop</span><br />
+              <span class="Info">Optimalisatie en herontwerp informatiebalk op de product
+                pagina van de Clipper Interall webshop.
+              </span>
+            </div>
+          </a>
 
-            <a class="work-images tile" href="./src/pages/daf.html">
-              <img
-                src="./src/assets/photos/MockupDAF2.png"
-                class="img-fluid mock-up"
-                alt="MockupDAF"
-              />
-              <div class="details">
-                <span class="title">Webapp DAF Trucks</span><br />
-                <span class="Info"
-                  >Een webapplicatie die de gebruiker ondersteund bij het leren
-                  van het nieuwe vrachtwagen dashboard en de stuurwiel
-                  schakelaars.</span
-                >
-              </div>
-            </a>
+          <a class="work-images tile" href="./src/pages/momoyoga.html">
+            <img src="./src/assets/photos/MockupMomo.png" class="img-fluid mock-up" alt="MockupMomo" />
+            <div class="details">
+              <span class="title">Statistiekendashboard Momoyoga</span><br />
+              <span class="Info">Een vernieuwd statistiekendashboard voor yogastudio's om inzicht te krijgen in hun
+                studio statistieken.</span>
+            </div>
+          </a>
 
-            <a class="work-images tile" href="./src/pages/strijp.html">
-              <img
-                src="./src/assets/photos/MockupStrijp.png"
-                class="img-fluid mock-up"
-                alt="MockupStrijp"
-              />
-              <div class="details">
-                <span class="title">Strijp-T Webapp</span><br />
-                <span class="Info"
-                  >Een hotspot webapplicatie van Strijp-T. De gebruiker krijgt
-                  informatie over Strijp-T en een stukje geschiedenis.</span
-                >
-              </div>
-            </a>
+          <a class="work-images tile" href="./src/pages/daf.html">
+            <img src="./src/assets/photos/MockupDAF2.png" class="img-fluid mock-up" alt="MockupDAF" />
+            <div class="details">
+              <span class="title">Webapp DAF Trucks</span><br />
+              <span class="Info">Een webapplicatie die de gebruiker ondersteund bij het leren
+                van het nieuwe vrachtwagen dashboard en de stuurwiel
+                schakelaars.</span>
+            </div>
+          </a>
 
-            <a class="work-images tile" href="./src/pages/ddw.html">
-              <img
-                src="./src/assets/photos/MockupDDW.png"
-                class="img-fluid mock-up"
-                alt="MockupDDW"
-              />
-              <div class="details">
-                <span class="title">Interactieve ervaring</span><br />
-                <span class="Info"
-                  >Een interactieve ervaring van de Fontys ICT InnovationLab.
-                  Deze ervaring laat bezoekers zien hoe het gebouw hen
-                  waarneemt.</span
-                >
-              </div>
-            </a>
+          <a class="work-images tile" href="./src/pages/strijp.html">
+            <img src="./src/assets/photos/MockupStrijp.png" class="img-fluid mock-up" alt="MockupStrijp" />
+            <div class="details">
+              <span class="title">Strijp-T Webapp</span><br />
+              <span class="Info">Een hotspot webapplicatie van Strijp-T. De gebruiker krijgt
+                informatie over Strijp-T en een stukje geschiedenis.</span>
+            </div>
+          </a>
 
-            <a class="work-images tile" href="./src/pages/lickalix.html">
-              <img
-                src="./src/assets/photos/MockupLickalix.png"
-                class="img-fluid mock-up"
-                alt="MockupLickalix"
-              />
-              <div class="details">
-                <span class="title">Branding LICKALIX</span><br />
-                <span class="Info"
-                  >Nieuwe composteerbare verpakkingen voor hun biologische en
-                  allergievrije ijslolly's. En een nieuwe stijl voor hun
-                  YouTube-content.</span
-                >
-              </div>
-            </a>
+          <a class="work-images tile" href="./src/pages/ddw.html">
+            <img src="./src/assets/photos/MockupDDW.png" class="img-fluid mock-up" alt="MockupDDW" />
+            <div class="details">
+              <span class="title">Interactieve ervaring</span><br />
+              <span class="Info">Een interactieve ervaring van de Fontys ICT InnovationLab.
+                Deze ervaring laat bezoekers zien hoe het gebouw hen
+                waarneemt.</span>
+            </div>
+          </a>
 
-            <!---<a class="work-images tile" href="./src/pages/ladiesgamers.html">
+          <a class="work-images tile" href="./src/pages/lickalix.html">
+            <img src="./src/assets/photos/MockupLickalix.png" class="img-fluid mock-up" alt="MockupLickalix" />
+            <div class="details">
+              <span class="title">Branding LICKALIX</span><br />
+              <span class="Info">Nieuwe composteerbare verpakkingen voor hun biologische en
+                allergievrije ijslolly's. En een nieuwe stijl voor hun
+                YouTube-content.</span>
+            </div>
+          </a>
+
+          <!---<a class="work-images tile" href="./src/pages/ladiesgamers.html">
               <img
                 src="./src/assets/photos/MockupLadiesGamers.png"
                 class="img-fluid mock-up"
@@ -189,49 +149,50 @@
                 >
               </div>
             </a>-->
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script>
-      window.sr = ScrollReveal();
-      sr.reveal(".headerImg", {
-        duration: 1500,
-        origin: "bottom",
-        distance: "300px",
-      });
-      sr.reveal(".headerText", {
-        duration: 1500,
-        origin: "right",
-        distance: "300px",
-      });
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal(".headerImg", {
+      duration: 1500,
+      origin: "bottom",
+      distance: "300px",
+    });
+    sr.reveal(".headerText", {
+      duration: 1500,
+      origin: "right",
+      distance: "300px",
+    });
 
-      sr.reveal(".work-header", {
-        duration: 1000,
-        origin: "bottom",
-        distance: "300px",
-        viewFactor: 0.5,
-      });
-      sr.reveal(".line-left", {
-        duration: 1000,
-        origin: "left",
-        distance: "300px",
-        viewFactor: 0.5,
-      });
-      sr.reveal(".line-right", {
-        duration: 1000,
-        origin: "right",
-        distance: "300px",
-        viewFactor: 0.5,
-      });
+    sr.reveal(".work-header", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "300px",
+      viewFactor: 0.5,
+    });
+    sr.reveal(".line-left", {
+      duration: 1000,
+      origin: "left",
+      distance: "300px",
+      viewFactor: 0.5,
+    });
+    sr.reveal(".line-right", {
+      duration: 1000,
+      origin: "right",
+      distance: "300px",
+      viewFactor: 0.5,
+    });
 
-      sr.reveal(".work-images", {
-        duration: 1000,
-        origin: "bottom",
-        distance: "300px",
-        viewFactor: 0.3,
-      });
-    </script>
-  </body>
+    sr.reveal(".work-images", {
+      duration: 1000,
+      origin: "bottom",
+      distance: "300px",
+      viewFactor: 0.3,
+    });
+  </script>
+</body>
+
 </html>
